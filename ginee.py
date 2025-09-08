@@ -98,7 +98,7 @@ def send_email():
 
         with smtplib.SMTP("smtp.gmail.com", 587) as server:
             server.starttls()
-            server.login("crazykido2303@gmail.com", "swxf gwfw jhun kbby") 
+            server.login("crazykido2303@gmail.com", "") 
             server.send_message(email)
 
         speak("Email has been sent successfully.")
@@ -202,4 +202,5 @@ if __name__ == "__main__":
         elif "offline" in query:
             speak("Bye sir, see you soon.")
             quit()
+
             
